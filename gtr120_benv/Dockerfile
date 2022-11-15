@@ -34,6 +34,8 @@ RUN ln -sf /bin/bash /bin/sh \
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 && \
 	update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 
+RUN wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/local/bin/repo && chmod +x /usr/local/bin/repo
+
 # update apt source list so that it can work in imera (x64 only)
 COPY sources.list /etc/apt/source.list
 
