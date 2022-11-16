@@ -37,7 +37,8 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 &&
 RUN wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/local/bin/repo && chmod +x /usr/local/bin/repo
 
 # update apt source list so that it can work in imera (x64 only)
-COPY sources.list /etc/apt/source.list
+RUN cp /etc/apt/sources.list /etc/apt/sources.list.ORIGINAL
+COPY sources.list /etc/apt/sources.list
 
 # entry point
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
