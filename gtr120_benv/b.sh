@@ -1,1 +1,1 @@
-docker build -t gtr120-buildenv:v1.1 .
+docker build -t toolchain_gtr120 .

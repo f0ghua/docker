@@ -2,7 +2,7 @@ FROM ubuntu:18.04 AS gtr120_buildenv
 
 # LABEL about the custom image
 LABEL maintainer="fog_hua@sdc.sercomm.com"
-LABEL version="1.0"
+#LABEL version="1.0"
 LABEL description="This is custom Docker Image for GTR120 build environment."
 
 ENV LANG en_US.UTF-8

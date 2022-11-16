@@ -1,7 +1,7 @@
 GUESTUSER=docker
 USERHOME=/home/$USER
 WORKSPACE=/workspace
-REPO=gtr120-buildenv:v1.0
+REPO=gtr120-buildenv
 CN=gtr120-benv
 echo -n "Docker ID:"
 docker run -d --ipc="host" --name=$CN --rm -it --init -e DISPLAY -e LOCAL_USER_ID=`id -u $USER` -v $USERHOME:/home/$GUESTUSER -v $WORKSPACE:/workspace $REPO

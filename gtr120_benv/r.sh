@@ -2,7 +2,7 @@ GUESTUSER=docker
 USERHOME=/home/$USER
 GUESTHOME=/home/$GUESTUSER
 WORKSPACE=/workspace
-REPO=gtr120-buildenv:v1.0
+REPO=gtr120-buildenv
 CN=gtr120-benv
 echo -n "Docker ID:"
 # --ipc="host" is a fix for share memory issue
