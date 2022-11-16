@@ -2,7 +2,7 @@ GUESTUSER=docker
 USERHOME=/home/$USER
 WORKSPACE=/workspace
 REPO=gtr120-buildenv
-CN=gtr120-benv
+CN=gtr120-benv_$USER
 echo -n "Docker ID:"
 docker run -d --ipc="host" --name=$CN --rm -it --init -e DISPLAY -e LOCAL_USER_ID=`id -u $USER` -v $USERHOME:/home/$GUESTUSER -v $WORKSPACE:/workspace $REPO
 IP=`docker inspect $CN -f {{.NetworkSettings.IPAddress}}`
