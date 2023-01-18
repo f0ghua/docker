@@ -11,6 +11,7 @@ useradd --shell /bin/bash -u $USER_ID -o -c "" -m docker
 addgroup docker sudo
 echo -e "123456\n123456" | (passwd docker)
 export HOME=/home/docker
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 sudo sed -i 's/#X11UseLocalhost yes/X11UseLocalhost no/' /etc/ssh/sshd_config
 /etc/init.d/ssh start
 exec su docker
