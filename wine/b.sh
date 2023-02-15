@@ -1,1 +1,1 @@
-docker build -t db9wine:v0.1 .
+docker build -t wine32:v0.5 .

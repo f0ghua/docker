@@ -1,6 +1,6 @@
 WORKSPACE=/home/fog
-REPO=db9wine:v0.1
-CN=db9wine-$USER
+REPO=wine32:v0.5
+CN=wine32-$USER
 echo -n "Docker ID:"
 docker run -d --ipc="host" --name=$CN --rm -it --init -e LOCAL_USER_ID=`id -u $USER` -v $WORKSPACE:/home/user $REPO
 #docker run -d --ipc="host" --name=$CN --rm -it --init -e DISPLAY -e LOCAL_USER_ID=`id -u $USER` -v $WORKSPACE:/home/user $REPO

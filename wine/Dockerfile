@@ -1,4 +1,5 @@
-FROM i386/debian:stretch-20210311 
+FROM i386/debian
+#FROM i386/debian:stretch-20210311 
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG en_US.UTF-8
