@@ -18,7 +18,8 @@ RUN apt-get install -y --no-install-recommends \
     ca-certificates apt-utils locales locales-all \
     libncurses5-dev python python3 unzip \
     git gawk wget file curl sudo runit \
-    vim net-tools inetutils-ping dos2unix
+    vim net-tools inetutils-ping dos2unix \
+	device-tree-compiler
 	
 # install packages from russia team 
 RUN apt-get install -y --allow-downgrades \

@@ -1,1 +1,1 @@
-docker build -t gtr120-buildenv:v2.2 .
+docker build -t gtr120-buildenv:v2.3 .
