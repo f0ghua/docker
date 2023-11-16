@@ -19,7 +19,7 @@ RUN apt-get install -y --no-install-recommends \
     libncurses5-dev python python3 unzip \
     git gawk wget file curl sudo runit \
     vim net-tools inetutils-ping dos2unix \
-	device-tree-compiler
+	device-tree-compiler git-lfs
 	
 # install packages from russia team 
 RUN apt-get install -y --allow-downgrades \
@@ -60,7 +60,7 @@ RUN ln -sf /usr/local/lib/libiconv.so.2.6.1 /usr/local/lib/libiconv.so \
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 && \
     update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 
-RUN wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/local/bin/repo && chmod +x /usr/local/bin/repo
+RUN wget https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -O /usr/local/bin/repo && chmod +x /usr/local/bin/repo
 
 # update apt source list so that it can work in imera (x64 only)
 RUN cp /etc/apt/sources.list /etc/apt/sources.list.ORIGINAL

@@ -1,1 +1,1 @@
-docker build -t rmdu-buildenv:v1.0 .
+docker build -t rmdu-buildenv:v1.1 .
