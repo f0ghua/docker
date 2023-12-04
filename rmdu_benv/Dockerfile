@@ -19,7 +19,7 @@ RUN apt-get install -y --no-install-recommends \
     libncurses5-dev python python3 unzip \
     git gawk wget file curl sudo runit \
     vim net-tools inetutils-ping dos2unix \
-	device-tree-compiler git-lfs
+	device-tree-compiler cron expect
 	
 # install packages from russia team 
 RUN apt-get install -y --allow-downgrades \
