@@ -1,6 +1,6 @@
 GUESTUSER=docker
-REPO=rmdu-buildenv:v1.1
-#REPO=mirrors.sdc.sercomm.com:5000/rmdu-buildenv:v1.1
+REPO=rmdu-buildenv:v1.2
+#REPO=mirrors.sdc.sercomm.com:5000/rmdu-buildenv:v1.2
 
 USERHOME=/home/$USER
 USERID=`id -u $USER`
