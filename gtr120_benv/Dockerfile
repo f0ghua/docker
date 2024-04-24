@@ -71,6 +71,9 @@ search 172.21.1.245\n\
 nameserver 172.21.1.231\
 ' > /etc/resolv.conf
 
+# add toolchain
+ADD ./files/toolchain-mipsel_24kc_gcc-7.4.0_musl.tar.gz /opt/compiler/gtr120
+
 # entry point
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["bash"]
