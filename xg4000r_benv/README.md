@@ -1,0 +1,2 @@
+- get buildroot-gcc493_glibc222_arm32_32bServer.tar.gz and buildroot-gcc1030-glibc232_kernel5_4.tgz, put it in files directory
+- run b.sh
