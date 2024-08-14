@@ -48,6 +48,10 @@ RUN apt-get install -y --no-install-recommends \
     openssh-server \
 	zip less bsdmainutils quilt smbclient
 	
+RUN apt-get install -y --no-install-recommends \ 
+	software-properties-common pkg-config gperf \
+	udev cpio
+	
 RUN ln -sf /bin/bash /bin/sh
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
